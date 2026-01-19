@@ -23,21 +23,21 @@ const topRowCards = [
   },
   {
     icon: Phone,
-    title: "Outbound Sales Caller",
+    title: "Outbound Sales Agent",
     highlight: "Outbound",
     metric: "3X more leads contacted",
     metricColor: "text-[var(--primary)]",
   },
   {
     icon: Calendar,
-    title: "Appointment Booking Voice",
+    title: "Appointment Booking Agent",
     highlight: "Appointment",
     metric: "60% booking rate increase",
     metricColor: "text-[var(--primary)]",
   },
   {
     icon: Sparkles,
-    title: "Lead Qualification Voice",
+    title: "Lead Qualification Agent",
     highlight: "Lead",
     metric: "45% conversion increased",
     metricColor: "text-[var(--primary)]",
@@ -47,15 +47,15 @@ const topRowCards = [
 const bottomRowCards = [
   {
     icon: MessageSquare,
-    title: "Customer Support Voice",
+    title: "Customer Support Agent",
     highlight: "Customer",
     metric: "70% faster resolution",
     metricColor: "text-[var(--primary)]",
   },
   {
     icon: Search,
-    title: "Voice Survey Agent",
-    highlight: "Voice",
+    title: "Survey Call Agent",
+    highlight: "Survey",
     metric: "4X response rate",
     metricColor: "text-[var(--primary)]",
   },
@@ -68,7 +68,7 @@ const bottomRowCards = [
   },
   {
     icon: LayoutGrid,
-    title: "Multi-Language Voice",
+    title: "Multi-Language Agent",
     highlight: "Multi-Language",
     metric: "20+ languages supported",
     metricColor: "text-[var(--primary)]",
