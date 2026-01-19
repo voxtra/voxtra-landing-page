@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Genesy - AI Agency & Automation Studio",
-  description: "Transform your business with cutting-edge AI solutions. We build intelligent automation systems that drive growth and efficiency.",
-  keywords: ["AI agency", "automation", "artificial intelligence", "machine learning", "business automation"],
+  title: "Voxtra - AI Voice Agents for Business",
+  description: "Never miss a call again. AI voice agents that handle calls, book appointments, and convert leads 24/7.",
+  keywords: ["AI voice agent", "voice AI", "phone automation", "call center AI", "virtual receptionist"],
 };
 
 export default function RootLayout({

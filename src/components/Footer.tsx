@@ -18,7 +18,6 @@ const navigationLinks = [
 const resourceLinks = [
   { label: "Privacy Policy", href: "#" },
   { label: "Terms Of Service", href: "#" },
-  { label: "404 Page", href: "#" },
 ];
 
 export default function Footer() {

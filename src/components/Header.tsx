@@ -93,7 +93,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="lg:hidden py-4 border-t border-[var(--border)]"
+              className="lg:hidden py-4 px-4 rounded-2xl border border-[var(--border)] bg-[var(--card)] backdrop-blur-sm"
             >
               <div className="flex flex-col gap-3">
                 {navLinks.map((link) => (

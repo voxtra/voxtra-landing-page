@@ -36,7 +36,7 @@ function InboundCard() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--card)] flex flex-col h-full"
+      className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--card)] flex flex-col h-full overflow-hidden w-full"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
@@ -48,7 +48,7 @@ function InboundCard() {
 
       {/* Content */}
       <h3 className="text-xl font-semibold mb-2">Inbound Voice Agents</h3>
-      <p className="text-sm text-[var(--muted)] leading-relaxed mb-6">
+      <p className="text-sm text-[var(--muted)] leading-relaxed mb-6 break-words">
         AI agents that answer calls instantly, handle inquiries, and never put customers on hold.
       </p>
 
@@ -107,7 +107,7 @@ function IntegrationsCard() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.1 }}
-      className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--card)] flex flex-col h-full overflow-hidden"
+      className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--card)] flex flex-col h-full overflow-hidden w-full"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
@@ -126,7 +126,7 @@ function IntegrationsCard() {
       {/* Tools Marquee */}
       <div className="mt-auto space-y-2 overflow-hidden">
         {/* Top Row - Moves Right */}
-        <div className="relative">
+        <div className="relative overflow-hidden">
           <motion.div
             className="flex gap-2"
             animate={{ x: [0, -240] }}
@@ -142,7 +142,7 @@ function IntegrationsCard() {
             {[...topRowIcons, ...topRowIcons].map((icon, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 h-12 w-12 rounded-xl border border-[var(--border)] bg-[var(--background)] flex items-center justify-center text-lg"
+                className="flex-shrink-0 h-10 w-10 md:h-12 md:w-12 rounded-xl border border-[var(--border)] bg-[var(--background)] flex items-center justify-center text-sm md:text-lg"
               >
                 {icon}
               </div>
@@ -151,7 +151,7 @@ function IntegrationsCard() {
         </div>
 
         {/* Bottom Row - Moves Left */}
-        <div className="relative">
+        <div className="relative overflow-hidden">
           <motion.div
             className="flex gap-2"
             initial={{ x: -240 }}
@@ -168,7 +168,7 @@ function IntegrationsCard() {
             {[...bottomRowIcons, ...bottomRowIcons].map((icon, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 h-12 w-12 rounded-xl border border-[var(--border)] bg-[var(--background)] flex items-center justify-center text-lg"
+                className="flex-shrink-0 h-10 w-10 md:h-12 md:w-12 rounded-xl border border-[var(--border)] bg-[var(--background)] flex items-center justify-center text-sm md:text-lg"
               >
                 {icon}
               </div>
@@ -197,7 +197,7 @@ function OutboundCard() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--card)] flex flex-col h-full overflow-hidden"
+      className="p-6 rounded-2xl border border-[var(--border)] bg-[var(--card)] flex flex-col h-full overflow-hidden w-full"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
@@ -399,7 +399,7 @@ function AnalyticsCard() {
 
 export default function Solutions() {
   return (
-    <section id="services" className="py-24 relative">
+    <section id="services" className="py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--border)] to-transparent" />
@@ -434,22 +434,22 @@ export default function Solutions() {
         </div>
 
         {/* Solutions Grid */}
-        <div className="space-y-4">
+        <div className="space-y-4 overflow-hidden">
           {/* Top Row - 2/3 + 1/3 */}
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="md:col-span-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="md:col-span-2 min-w-0">
               <InboundCard />
             </div>
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 min-w-0">
               <IntegrationsCard />
             </div>
           </div>
           {/* Bottom Row - 1/3 + 2/3 */}
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="md:col-span-1">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="md:col-span-1 min-w-0">
               <OutboundCard />
             </div>
-            <div className="md:col-span-2">
+            <div className="md:col-span-2 min-w-0">
               <AnalyticsCard />
             </div>
           </div>
